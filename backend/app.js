@@ -11,9 +11,6 @@ app.options('*', cors());
 
 // Midlleware
 app.use(express.json());
-app.use(morgan('tiny'));
-
-
 // Routes
 const categoriesRoutes = require('./routes/categories');
 const productsRoutes = require('./routes/products');
